@@ -11,6 +11,10 @@ class Calculator:
         self.entry_value = ''
         Entry(width=17,bg= '#fff',font=('Arial Bold'), textvariable= self.equation.place(x=0,y=0))
         
+    def show(self, value):
+        self.entry_value+=str(value)
+        self.equation.set(self.entry_value)
+        
 
 root=Tk()
 root.mainloop()
