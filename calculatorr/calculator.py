@@ -19,6 +19,9 @@ class Calculator:
         self.entry_value = ''
         self.equation.set(self.entry_value)
         
+    def solve(self):
+        result = eval(self.entry_value)
+        
 
 root=Tk()
 root.mainloop()
